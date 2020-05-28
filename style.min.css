@@ -1,0 +1,16 @@
+@media print{
+.screen-only{display:none}
+}
+html{margin-left:40px;margin-right:40px}
+h1{color:#4887e6;text-align:center;font-family:Georgia,"San Serif";font-size:36px}
+li,p{font-family:Georgia,"San Serif";font-size:18px}
+p::selection{color:#4887e6;background-color:#e6c027}
+h2{font-family:Georgia,"San Serif";font-size:26px;color:#e6c027;text-align:center}
+li{margin:10px}
+.center{display:block;margin-left:auto;margin-right:auto;width:40%}
+*{box-sizing:border-box}
+.column{float:left;width:33.33%;padding:5px}
+.row::after{content:"";clear:both;display:table}
+table{margin-left:auto;margin-right:auto;border:2px solid #fff;border-collapse:collapse;width:80%}
+td,th{border:2px solid #fff;padding:10px;text-align:center;font-family:Georgia,"San Serif";font-size:18px}
+td{font-weight:400}

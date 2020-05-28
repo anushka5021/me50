@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-family: "Georgia", "San Serif";
+}
+
+.container > div {
+    font-family: "Georgia", "San Serif";
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    align-content: center;
+}
+
+h1 {
+    color: #581845 ;
+    text-align: center;
+    font-family: "Georgia", "San Serif";
+    font-size: 36px;
+}
+
+p, li, h2 {
+    color: #981450;
+    font-family: "Georgia", "San Serif";
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+p::selection {
+    color: #4887E6;
+    background-color: #E6C027;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    margin: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+input {
+    font-family: "Georgia", "San Serif";
+    font-size: 18px;
+    background-color:#581845;
+    color: white;
+}

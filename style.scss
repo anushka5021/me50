@@ -1,0 +1,75 @@
+$margin: 40px;
+$font: "Georgia", "San Serif";
+
+%style {
+    font-family: $font;
+    text-align: center;
+}
+
+@media print {
+    .screen-only{display:none}
+}
+html {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+h1 { 
+    @extend %style;
+    color:#4887e6;
+    font-size:36px
+}
+p {
+    @extend %style;
+    font-size:18px;   
+}
+    p::selection {
+        color:#4887e6;
+        background-color:#e6c027
+    }  
+
+h2 {
+    @extend %style;
+    font-size:26px;
+    color:#e6c027;
+    text-align:center
+}
+li {
+    font-family: $font;
+    font-size:18px;  
+    margin:10px
+}
+.center {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:40%
+}
+*{
+    box-sizing:border-box
+}
+.column {
+    float:left;
+    width:33.33%;
+    padding:5px
+}
+.row::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+table {
+    margin-left:auto;
+    margin-right:auto;
+    border:2px solid #fff;
+    border-collapse:collapse;
+    width:80%;
+}
+td,th {
+    border:2px solid #fff;
+    padding:10px;text-align:center;
+    font-family:$font;
+    font-size:18px;
+}
+td {
+    font-weight:400;
+}
